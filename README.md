@@ -52,14 +52,14 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MiscApi(swagger_client.ApiClient(configuration))
+api_instance = swagger_client.SupplyFrameApi(swagger_client.ApiClient(configuration))
 token = 'token_example' # str | Access token provided by Supplyframe.
 
 try:
     # /documentation/v1/postman
     api_instance.documentationv1postman(token)
 except ApiException as e:
-    print("Exception when calling MiscApi->documentationv1postman: %s\n" % e)
+    print("Exception when calling SupplyFrameApi->documentationv1postman: %s\n" % e)
 
 ```
 
@@ -69,10 +69,10 @@ All URIs are relative to *https://api.supplyframe.io*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*MiscApi* | [**documentationv1postman**](docs/MiscApi.md#documentationv1postman) | **GET** /documentation/v1/postman | /documentation/v1/postman
-*MiscApi* | [**normalizationv1manufacturer**](docs/MiscApi.md#normalizationv1manufacturer) | **GET** /normalization/v1/manufacturer | /normalization/v1/manufacturer
-*MiscApi* | [**parametricv1query**](docs/MiscApi.md#parametricv1query) | **GET** /parametric/v1/query | /parametric/v1/query
-*MiscApi* | [**parametricv1schemaquery**](docs/MiscApi.md#parametricv1schemaquery) | **GET** /parametric/v1/schema/query | /parametric/v1/schema/query
+*SupplyFrameApi* | [**documentationv1postman**](docs/SupplyFrameApi.md#documentationv1postman) | **GET** /documentation/v1/postman | /documentation/v1/postman
+*SupplyFrameApi* | [**normalizationv1manufacturer**](docs/SupplyFrameApi.md#normalizationv1manufacturer) | **GET** /normalization/v1/manufacturer | /normalization/v1/manufacturer
+*SupplyFrameApi* | [**parametricv1query**](docs/SupplyFrameApi.md#parametricv1query) | **GET** /parametric/v1/query | /parametric/v1/query
+*SupplyFrameApi* | [**parametricv1schemaquery**](docs/SupplyFrameApi.md#parametricv1schemaquery) | **GET** /parametric/v1/schema/query | /parametric/v1/schema/query
 
 
 ## Documentation For Models

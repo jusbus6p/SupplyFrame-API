@@ -1,7 +1,5 @@
 # coding: utf-8
 
-# flake8: noqa
-
 """
     Supplyframe API
 
@@ -15,10 +13,50 @@
 
 from __future__ import absolute_import
 
-# import apis into sdk package
-from swagger_client.api.supplyframe_api import SupplyFrameApi
+import unittest
 
-# import ApiClient
-from swagger_client.api_client import ApiClient
-from swagger_client.configuration import Configuration
-# import models into sdk package
+import swagger_client
+from swagger_client.api.misc_api import SupplyFrameApi  # noqa: E501
+from swagger_client.rest import ApiException
+
+
+class TestSupplyFrameApi(unittest.TestCase):
+    """SupplyFrameApi unit test stubs"""
+
+    def setUp(self):
+        self.api = swagger_client.api.misc_api.SupplyFrameApi()  # noqa: E501
+
+    def tearDown(self):
+        pass
+
+    def test_documentationv1postman(self):
+        """Test case for documentationv1postman
+
+        /documentation/v1/postman  # noqa: E501
+        """
+        pass
+
+    def test_normalizationv1manufacturer(self):
+        """Test case for normalizationv1manufacturer
+
+        /normalization/v1/manufacturer  # noqa: E501
+        """
+        pass
+
+    def test_parametricv1query(self):
+        """Test case for parametricv1query
+
+        /parametric/v1/query  # noqa: E501
+        """
+        pass
+
+    def test_parametricv1schemaquery(self):
+        """Test case for parametricv1schemaquery
+
+        /parametric/v1/schema/query  # noqa: E501
+        """
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()
