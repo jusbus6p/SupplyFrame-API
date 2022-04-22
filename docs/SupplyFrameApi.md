@@ -1,4 +1,4 @@
-# swagger_client.SupplyFrameApi
+# supplyframe.SupplyFrameApi
 
 All URIs are relative to *https://api.supplyframe.io*
 
@@ -21,12 +21,12 @@ Retrives documentation in Postman Collection v2.1 format for routes available to
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import supplyframe
+from supplyframe.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SupplyFrameApi()
+api_instance = supplyframe.SupplyFrameApi()
 token = 'token_example' # str | Access token provided by Supplyframe.
 
 try:
@@ -68,12 +68,12 @@ Returns normalized manufacturer metadata based on the user-provided manufacturer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import supplyframe
+from supplyframe.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SupplyFrameApi()
+api_instance = supplyframe.SupplyFrameApi()
 token = 'token_example' # str | Access token provided by Supplyframe.
 uuid = 'uuid_example' # str | Unique user identifier. Non-empty string.
 query = 'query_example' # str | Manufacturer name to be normalized.
@@ -119,12 +119,12 @@ Retrieve part parametric data based on a set of given query constraints.  Respon
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import supplyframe
+from supplyframe.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SupplyFrameApi()
+api_instance = supplyframe.SupplyFrameApi()
 token = 'token_example' # str | Access token provided by Supplyframe.
 uuid = 'uuid_example' # str | Unique user identifier. Non-empty string.
 
@@ -168,12 +168,12 @@ Describes a set of fields that can be returned by the /parametric/v1/query route
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import supplyframe
+from supplyframe.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SupplyFrameApi()
+api_instance = supplyframe.SupplyFrameApi()
 token = 'token_example' # str | Access token provided by Supplyframe.
 
 try:
